@@ -1,8 +1,10 @@
 {
-  "name": "component-generator",
+  "name": "rhabit-generate",
   "version": "1.0.0",
   "description": "CLI tool for generating components that adhere to Rhabit guidelines",
-  "main": "index.js",
+  "main": "component-generator.js",
+  "preferGlobal": true,
+  "bin": "./component-generator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -1,13 +1,10 @@
-/**
- * Pizza delivery prompt example
- * run example by writing `node pizza.js` in your console
- */
-
+#!/usr/bin/env node
 "use strict";
 var inquirer = require("inquirer");
 var fs = require("fs");
 
-console.log("Hi, welcome to Node Pizza");
+console.log("Welcome to the Rhabit Component Generator");
+console.log("Make sure you're in the proper directory before continuing");
 
 const getReactImportString = choices => {
   if (choices.length === 0) {
@@ -68,8 +65,6 @@ inquirer.prompt(questions).then(answers => {
     stream.write(`export default ${componentName}`);
     stream.write("\n");
     stream.end();
+    console.log("Done!");
   });
-  // fs.writeFile(`${answers.componentName}/index.js`, "Hello World", () =>
-  //   console.log("wrote all data to file")
-  // );
 });
