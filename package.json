@@ -1,0 +1,11 @@
+{
+  "name": "component-generator",
+  "version": "1.0.0",
+  "description": "CLI tool for generating components that adhere to Rhabit guidelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Janas",
+  "license": "ISC"
+}
